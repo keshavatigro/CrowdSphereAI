@@ -1,0 +1,12 @@
+node_modules
+.next
+.git
+.github
+.env
+.env.*
+!.env.example
+README.md
+Logo.png
+Logo1.png
+RGIS_Logo.png
+*.md

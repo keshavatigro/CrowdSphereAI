@@ -325,6 +325,28 @@ GitHub Actions (`.github/workflows/ci.yml`) runs `lint`, `typecheck`, and `build
 
 ---
 
+## Deploy to Google Cloud (Cloud Run)
+
+**Project:** `crowdsphereai` — open [Cloud Shell](https://console.cloud.google.com/welcome?project=crowdsphereai&cloudshell=true) for that project.
+
+1. **Enable billing** on the project ([Billing](https://console.cloud.google.com/billing/linkedaccount?project=crowdsphereai)) — required for Cloud Run and Cloud Build.
+2. In Cloud Shell:
+
+```bash
+git clone https://github.com/keshavatigro/CrowdSphereAI.git
+cd CrowdSphereAI
+export GEMINI_API_KEY="your-gemini-key"
+export OPENAI_API_KEY="your-openai-key"
+chmod +x scripts/deploy-cloud-run.sh
+./scripts/deploy-cloud-run.sh
+```
+
+The script enables APIs, stores keys in **Secret Manager**, builds the Docker image from the repo `Dockerfile`, and deploys **`crowdsphere-ai`** to **Cloud Run** (`us-central1`). When it finishes, it prints the public HTTPS URL.
+
+To redeploy after code changes: `git pull` in the repo folder, then run the script again.
+
+---
+
 ## License
 
 MIT
