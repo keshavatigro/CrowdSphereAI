@@ -1,0 +1,142 @@
+{
+  "id": "rgis-hyderabad",
+  "name": "Rajiv Gandhi International Cricket Stadium",
+  "shortName": "RGIS Hyderabad",
+  "location": "Hyderabad, Telangana, India",
+  "capacity": 55000,
+  "established": 2003,
+  "image": "/rgis-logo.png",
+  "about": "Home of Sunrisers Hyderabad and a premier IPL venue. The stadium features three main stands, a VIP pavilion, dual concourses, and integrated command-and-control systems for high-attendance limited-overs cricket.",
+  "history": [
+    { "year": 2003, "event": "Stadium inaugurated; first international fixture hosted." },
+    { "year": 2010, "event": "Major floodlight and seating upgrades for IPL expansion." },
+    { "year": 2017, "event": "Concourse B food court expansion — added CCTV mesh coverage." },
+    { "year": 2023, "event": "Digital twin blueprint integrated into CrowdSphere command platform." },
+    { "year": 2025, "event": "Post-match egress AI routing pilot deployed across all nine gates." }
+  ],
+  "stats": {
+    "totalMatchesHosted": 142,
+    "internationalMatches": 28,
+    "iplMatches": 98,
+    "otherEvents": 16,
+    "averageAttendance": 47200,
+    "peakAttendance": 53800
+  },
+  "gates": [
+    { "id": "G1", "name": "Gate 1 — North A", "zone": "North Stand", "typicalLoad": "high", "cctv": true },
+    { "id": "G2", "name": "Gate 2 — North B", "zone": "North Stand", "typicalLoad": "high", "cctv": true },
+    { "id": "G3", "name": "Gate 3 — South A", "zone": "South Stand", "typicalLoad": "medium", "cctv": true },
+    { "id": "G4", "name": "Gate 4 — South B", "zone": "South Stand", "typicalLoad": "medium", "cctv": true },
+    { "id": "G5", "name": "Gate 5 — East", "zone": "East Terrace", "typicalLoad": "medium", "cctv": true },
+    { "id": "G6", "name": "Gate 6 — West", "zone": "West Terrace", "typicalLoad": "low", "cctv": true },
+    { "id": "G7", "name": "Gate 7 — VIP", "zone": "VIP Pavilion", "typicalLoad": "low", "cctv": true },
+    { "id": "G8", "name": "Gate 8 — Concourse N", "zone": "Food Court", "typicalLoad": "high", "cctv": true },
+    { "id": "G9", "name": "Gate 9 — Concourse S", "zone": "Food Court", "typicalLoad": "high", "cctv": true }
+  ],
+  "recentMatches": [
+    {
+      "date": "May 23, 2026",
+      "title": "SRH vs RCB",
+      "competition": "IPL 2026",
+      "attendance": 52100,
+      "securityIncidents": 0,
+      "status": "completed"
+    },
+    {
+      "date": "May 15, 2026",
+      "title": "SRH vs MI",
+      "competition": "IPL 2026",
+      "attendance": 49800,
+      "securityIncidents": 1,
+      "status": "completed"
+    },
+    {
+      "date": "May 8, 2026",
+      "title": "SRH vs CSK",
+      "competition": "IPL 2026",
+      "attendance": 51200,
+      "securityIncidents": 0,
+      "status": "completed"
+    },
+    {
+      "date": "Apr 28, 2026",
+      "title": "SRH vs KKR",
+      "competition": "IPL 2026",
+      "attendance": 46500,
+      "securityIncidents": 2,
+      "status": "completed"
+    },
+    {
+      "date": "Apr 12, 2026",
+      "title": "India vs Australia T20",
+      "competition": "International",
+      "attendance": 53800,
+      "securityIncidents": 1,
+      "status": "completed"
+    }
+  ],
+  "events": [
+    { "date": "Mar 2026", "name": "IPL Season Opener Concert", "type": "entertainment", "incidents": 0 },
+    { "date": "Jan 2026", "name": "Hyderabad Marathon Finish Zone", "type": "community", "incidents": 0 },
+    { "date": "Dec 2025", "name": "New Year Fan Fest", "type": "festival", "incidents": 1 }
+  ],
+  "securityRecords": [
+    {
+      "id": "sec-2026-04",
+      "date": "Apr 28, 2026",
+      "match": "SRH vs KKR",
+      "gate": "G4",
+      "type": "crowd_bottleneck",
+      "severity": "medium",
+      "summary": "Post-innings break surge at Gate 4 — queue exceeded 180 for 6 minutes.",
+      "prevention": "Deploy throttle at G4 when concourse density >75%; pre-stage stewards at South B choke point."
+    },
+    {
+      "id": "sec-2026-04b",
+      "date": "Apr 28, 2026",
+      "match": "SRH vs KKR",
+      "gate": "G8",
+      "type": "unattended_item",
+      "severity": "low",
+      "summary": "Bag left near Concourse B — cleared in 4 min after CCTV flag.",
+      "prevention": "Maintain Gemini vision sweep every 5 min on Concourse B feeds during peak F&B."
+    },
+    {
+      "id": "sec-2026-05",
+      "date": "May 15, 2026",
+      "match": "SRH vs MI",
+      "gate": "G1",
+      "type": "altercation",
+      "severity": "medium",
+      "summary": "Minor altercation in North Stand queue — de-escalated, no injuries.",
+      "prevention": "Increase visible security at G1/G2 when North Stand >80% capacity pre-match."
+    },
+    {
+      "id": "sec-2025-12",
+      "date": "Dec 31, 2025",
+      "match": "New Year Fan Fest",
+      "gate": "G5",
+      "type": "weather",
+      "severity": "high",
+      "summary": "Lightning within 4 mi — delayed ingress to East Terrace 22 minutes.",
+      "prevention": "Auto shelter protocol webhook now triggers at 3 mi (implemented Jan 2026)."
+    },
+    {
+      "id": "sec-2025-intl",
+      "date": "Apr 12, 2026",
+      "match": "India vs Australia T20",
+      "gate": "G2",
+      "type": "crowd_bottleneck",
+      "severity": "high",
+      "summary": "Record attendance egress crush risk at North B — hold applied 12 min.",
+      "prevention": "Post-match egress playbook: open G5 diversion + free water incentive (proven May 2026 pilot)."
+    }
+  ],
+  "preventionPlaybook": [
+    "Correlate gate queue length with zone density — hold ingress before queues exceed 150.",
+    "Repeat-incident gates (G1, G4, G8) get extra stewards 45 min before peak phases.",
+    "Apply lessons from international matches to IPL sell-outs (earlier egress messaging).",
+    "Use vision AI on Concourse B after any unattended-item flag within 30 days.",
+    "Lightning <3 mi: auto shelter protocol — no manual approval required."
+  ]
+}

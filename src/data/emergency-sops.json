@@ -1,0 +1,49 @@
+[
+  {
+    "id": "severe-weather",
+    "title": "Severe Weather / Lightning",
+    "tags": ["weather", "lightning", "storm"],
+    "steps": [
+      "Suspend play per IPL safety matrix when lightning is within 8 km; evacuate open-air seating at 5 km.",
+      "Activate PA: direct fans to nearest covered concourse or stamped shelter zone.",
+      "Close exposed gates (terraces, parking) and hold ingress to open-air zones.",
+      "Dispatch weather desk to confirm MET feed every 2 minutes.",
+      "Log all gate closures and shelter occupancy for post-event review."
+    ]
+  },
+  {
+    "id": "crowd-crush",
+    "title": "Crowd Crush / Surge",
+    "tags": ["crowd", "surge", "density", "bottleneck"],
+    "steps": [
+      "Immediate hold on ingress to affected sector; open alternate egress paths.",
+      "Deploy stewards to form perpendicular flow lanes — never oppose crowd momentum.",
+      "Issue digital signage and push routing fans to alternate gates with incentives if needed.",
+      "Alert medical teams to stage at concourse choke points.",
+      "Escalate to incident commander if density exceeds 90% for more than 3 minutes."
+    ]
+  },
+  {
+    "id": "power-outage",
+    "title": "Power Outage",
+    "tags": ["power", "electrical", "blackout"],
+    "steps": [
+      "Switch command center to UPS and enable radio backup channels.",
+      "Illuminate emergency egress with battery backup lighting paths.",
+      "Pause escalators; post stewards at stairwell landings.",
+      "Verify ticket scanners on offline whitelist mode.",
+      "Coordinate with utility vendor; update fans every 10 minutes via SMS."
+    ]
+  },
+  {
+    "id": "medical-mci",
+    "title": "Mass Casualty Medical",
+    "tags": ["medical", "ambulance", "injury"],
+    "steps": [
+      "Establish triage point upwind of incident, minimum 50m from crowd flow.",
+      "Clear corridor for ambulance access via nearest vehicle gate.",
+      "Pause unrelated announcements; single spokesperson for PA.",
+      "Document timeline and CCTV bookmark from T-5 to T+15 minutes."
+    ]
+  }
+]

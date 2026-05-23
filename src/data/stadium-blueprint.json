@@ -1,0 +1,91 @@
+{
+  "stadium": "Rajiv Gandhi International Cricket Stadium",
+  "city": "Hyderabad, Telangana",
+  "concourses": [
+    {
+      "id": "concourse-a",
+      "name": "Concourse A — North",
+      "zoneId": "north-stand",
+      "cctvFeeds": ["CAM-N-01", "CAM-N-02"]
+    },
+    {
+      "id": "concourse-b",
+      "name": "Concourse B — Food Court",
+      "zoneId": "food-court",
+      "cctvFeeds": ["CAM-FC-01", "CAM-FC-02", "CAM-FC-03"]
+    },
+    {
+      "id": "concourse-c",
+      "name": "Concourse C — South",
+      "zoneId": "south-stand",
+      "cctvFeeds": ["CAM-S-01", "CAM-S-02"]
+    }
+  ],
+  "sectors": [
+    {
+      "id": "sector-4",
+      "name": "Sector 4 — North Stand",
+      "zoneId": "north-stand",
+      "exits": [
+        {
+          "id": "stairwell-c",
+          "name": "Stairwell C",
+          "type": "secure_exit",
+          "connectsTo": "Gate 1 — North A",
+          "gateId": "G1",
+          "notes": "Primary secure egress for upper north bowl"
+        },
+        {
+          "id": "stairwell-d",
+          "name": "Stairwell D",
+          "type": "exit",
+          "connectsTo": "Gate 2 — North B",
+          "gateId": "G2"
+        }
+      ]
+    },
+    {
+      "id": "sector-8",
+      "name": "Sector 8 — South Stand",
+      "zoneId": "south-stand",
+      "exits": [
+        {
+          "id": "stairwell-a",
+          "name": "Stairwell A",
+          "type": "secure_exit",
+          "connectsTo": "Gate 3 — South A",
+          "gateId": "G3"
+        }
+      ]
+    },
+    {
+      "id": "sector-food",
+      "name": "Sector Food Court",
+      "zoneId": "food-court",
+      "exits": [
+        {
+          "id": "stairwell-f1",
+          "name": "Stairwell F1",
+          "type": "secure_exit",
+          "connectsTo": "Gate 8 — Concourse North",
+          "gateId": "G8"
+        },
+        {
+          "id": "stairwell-f2",
+          "name": "Stairwell F2",
+          "type": "exit",
+          "connectsTo": "Gate 9 — Concourse South",
+          "gateId": "G9"
+        }
+      ]
+    }
+  ],
+  "shelterZones": [
+    { "zoneId": "north-stand", "shelter": "North Stand covered concourse" },
+    { "zoneId": "south-stand", "shelter": "South Stand covered concourse" },
+    { "zoneId": "food-court", "shelter": "Food Court indoor pavilion" },
+    { "zoneId": "east-terrace", "shelter": "East Terrace storm shelter — Block E" },
+    { "zoneId": "west-terrace", "shelter": "West Terrace storm shelter — Block W" }
+  ],
+  "openAirZones": ["east-terrace", "west-terrace", "parking-a", "parking-b"]
+}
