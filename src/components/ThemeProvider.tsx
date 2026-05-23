@@ -9,6 +9,7 @@ import {
 } from "react";
 import {
   applyTheme,
+  DEFAULT_THEME,
   getStoredTheme,
   THEME_CHANGE_EVENT,
   type Theme,
@@ -32,11 +33,11 @@ function subscribeTheme(onStoreChange: () => void) {
 }
 
 function getThemeSnapshot(): Theme {
-  return getStoredTheme() ?? "dark";
+  return getStoredTheme() ?? DEFAULT_THEME;
 }
 
 function getServerThemeSnapshot(): Theme {
-  return "dark";
+  return DEFAULT_THEME;
 }
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {

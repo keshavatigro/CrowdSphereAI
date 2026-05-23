@@ -1,5 +1,7 @@
 export type Theme = "light" | "dark";
 
+export const DEFAULT_THEME: Theme = "light";
+
 export const THEME_STORAGE_KEY = "crowdsphere-theme";
 
 export function getStoredTheme(): Theme | null {
