@@ -238,14 +238,17 @@ export function CommandCenter() {
           </div>
 
           {Object.keys(state.signageMessages).length > 0 && (
-            <div className="mt-6 rounded-xl border border-amber-400/50 bg-amber-950/15 p-4 dark:border-amber-400/55">
-              <h3 className="text-xs font-medium uppercase text-amber-400">
+            <div className="mt-6 rounded-xl border border-amber-400 bg-amber-50 p-4 shadow-sm ring-1 ring-amber-200/80 dark:border-amber-500/60 dark:bg-amber-950/50 dark:ring-amber-500/30">
+              <h3 className="text-xs font-semibold uppercase tracking-wide text-amber-900 dark:text-amber-200">
                 Digital signage
               </h3>
-              <ul className="mt-2 space-y-1 text-xs text-amber-100/90">
+              <ul className="mt-3 space-y-2 text-sm leading-relaxed text-amber-950 dark:text-amber-50">
                 {Object.entries(state.signageMessages).map(([zid, msg]) => (
                   <li key={zid}>
-                    <span className="text-amber-300">{zid}</span>: {msg}
+                    <span className="font-semibold text-amber-800 dark:text-amber-300">
+                      {zid}
+                    </span>
+                    : {msg}
                   </li>
                 ))}
               </ul>
