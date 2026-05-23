@@ -4,6 +4,8 @@
 
 Built for dangerous bottlenecks and fragmented manual systems during pre-match ingress, in-play congestion, and post-match egress.
 
+📄 **[Features, technology & how it works](docs/FEATURES_AND_TECHNOLOGY.md)** — detailed product and architecture guide.
+
 ![CrowdSphere AI](public/logo1.png)
 
 ---
